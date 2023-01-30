@@ -1,0 +1,56 @@
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+
+    // Shape
+    width: 70px;
+    height: 70px;
+    border: 3px solid;
+    border-radius: 50%;
+    border-color: transparent #000 #000;
+
+    // Animation
+    transform-origin: top left;
+    animation: cssload-spin 690ms infinite linear;
+    @keyframes cssload-spin {
+      from {
+        transform: rotate(0deg) translate(-50%, -50%);
+      }
+      to {
+        transform: rotate(360deg) translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+.skeleton {
+  background: #eee;
+  background: linear-gradient(110deg, 
+      hsl(0, 0%, 86%) 8%,
+      hsl(0, 0%, 90%) 18%,
+      hsl(0, 0%, 86%) 33%,
+    );
+  border-radius: 5px;
+  background-size: 200% 200%;
+
+  min-height: 200px;
+
+  animation: loading 1.5s linear infinite;
+  @keyframes loading {
+    to {
+      background-position-x: -200%;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.text-black {
+  color: black;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-muted {
+  color: darkgray;
+}
+
+.text-transparent {
+  &,
+  &:active,
+  &:visited {
+    color: inherit;
+  }
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-secondary {
+  background-color: darkslategray;
+}

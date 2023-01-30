@@ -1,0 +1,27 @@
+@import '../../styles/mixins';
+
+.grid {
+  --cols: 1;
+  display: grid;
+  grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+  
+  margin-top: 1rem;
+  gap: 1rem;
+
+  @include media-up-to(sm) {
+    --cols: 2;
+  }
+  
+  @include media-up-to(md) {
+    --cols: 3;
+  }
+
+  @include media-up-to(lg) {
+    --cols: 4;
+  }
+
+  @include media-up-to(xl) {
+    --cols: 5;
+  }
+
+}

@@ -1,0 +1,25 @@
+@import 'root';
+
+// Utils - styling
+@import 'text';
+@import 'colors';
+@import 'sizing';
+
+// Utils - layouts
+@import "display";
+@import 'flex';
+@import 'position';
+
+// Components
+@import 'buttons';
+
+// Layout styles
+.root-container {
+  min-height: 100vh;
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  grid-area: 'header' 'content' 'footer';
+}
+

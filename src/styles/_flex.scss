@@ -1,0 +1,39 @@
+@import 'variables';
+@import 'mixins';
+
+.gap-3 {
+  gap: 1rem;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+.f-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.f-space-between {
+  justify-content: space-between;
+}
+
+.f-order-1 {
+  order: 1;
+}
+
+.f-order-md-0 {
+  @include media-up-to(md) {
+    order: 0;
+  }
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+.f-md-row {
+  @include media-up-to(md) {
+    flex-direction: row;
+  } 
+}

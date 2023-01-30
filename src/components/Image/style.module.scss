@@ -1,0 +1,17 @@
+.wrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+
+  .placeholder {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .img-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

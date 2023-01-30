@@ -1,0 +1,42 @@
+.btn {
+  padding: 8px 12px;
+  border-radius: 5px;
+  background: none;
+  border: 1px solid transparent;
+
+  &:focus,
+  &:hover,
+  &:active {
+    outline: none;
+  }
+}
+
+.btn-sm {
+  padding: 5px 10px;
+}
+
+.btn-lg {
+  padding: 10px 20px;
+}
+
+.btn-secondary{
+  background: darkslategray;
+  color: white;
+
+  &:focus,
+  &:hover,
+  &:active {
+    box-shadow: 0 0 5px darkgray;
+    border-color:  darkgray;
+  }
+}
+
+.btn-ghost {
+  &:focus,
+  &:hover,
+  &:active {
+    box-shadow: 0 0 5px #ccc;
+    border-color:  #ddd;
+    outline: none;
+  }
+}

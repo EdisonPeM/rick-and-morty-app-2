@@ -1,0 +1,24 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.character-card {
+  margin: auto;
+  width: 100%;
+  @include media-up-to(lg) {
+    max-width: $lg;
+  }
+
+  .character-image {
+    width: 100%;
+    
+    @include media-up-to(md) {
+      width: 400px;
+    }
+  }
+
+  .character-info {    
+    @include media-up-to(md) {
+      font-size: 1.2rem;
+    }
+  }
+}

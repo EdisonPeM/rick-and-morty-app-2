@@ -1,0 +1,15 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.container {
+  --max-width: none;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem;
+
+  @each $breakpoint, $size in $breakpoints-map {
+    @include media-up-to($breakpoint) {
+      --max-width: calc(#{$size} - 1rem);
+    }
+  }
+}

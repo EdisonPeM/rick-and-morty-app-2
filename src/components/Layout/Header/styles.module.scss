@@ -1,0 +1,38 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;;
+
+  &__navbar {
+    background-color: darkslategray;
+  }
+
+  &__nav-link {
+    display: inline-block;
+    padding: 1rem;
+    // margin-inline-end: 5px;
+    background-color: darkslategray;
+    border: none;
+    font-size: 1rem;
+    border-bottom: 3px solid transparent;
+
+    &,
+    &:visited {
+      color: white;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: hsl(180, 25%, 20%);
+    }
+
+    &:active {
+      background-color: hsl(180, 25%, 15%);
+    }
+
+    &--active {
+      background-color: hsl(180, 25%, 20%);
+      border-bottom: 3px solid white;
+    }
+  }
+}
